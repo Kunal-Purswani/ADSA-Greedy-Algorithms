@@ -178,35 +178,28 @@ class Knapsack {
                     res = ks.greedyOnProfit(objs, cap, profit, weight, prw);
                     if (Math.floor(res) - res == 0) {
                         System.out.println("\nGreedy On Profit: " + (int) Math.floor(res));
-                        System.out.println("\n------------------------------------------------------");
                     } else {
                         System.out.println("\nGreedy On Profit: " + res);
-                        System.out.println("\n------------------------------------------------------");
                     }
                     break;
                 case 2:
                     res = ks.greedyOnWeight(objs, cap, profit, weight, prw);
                     if (Math.floor(res) - res == 0) {
                         System.out.println("\nGreedy On Weight: " + (int) Math.floor(res));
-                        System.out.println("\n------------------------------------------------------");
                     } else {
                         System.out.println("\nGreedy On Weight: " + res);
-                        System.out.println("\n------------------------------------------------------");
                     }
                     break;
                 case 3:
                     res = ks.greedyOnPRW(objs, cap, profit, weight, prw);
                     if (Math.floor(res) - res == 0) {
                         System.out.println("\nGreedy On Profit Ratio Weight: " + (int) Math.floor(res));
-                        System.out.println("\n------------------------------------------------------");
                     } else {
                         System.out.println("\nGreedy On Profit Ratio Weight: " + res);
-                        System.out.println("\n------------------------------------------------------");
                     }
                     break;
                 case 4:
                     System.out.println("\n" + ks.getMostProfitableSolution(objs, cap, profit, weight, prw));
-                    System.out.println("\n------------------------------------------------------");
                     break;
                 case 5:
                     System.out.println("\nThankyou for running this program.");
@@ -215,9 +208,9 @@ class Knapsack {
                     break;
                 default:
                     System.out.println("\nPlease make a valid choice.");
-                    System.out.println("\n------------------------------------------------------");
                     break;
             }
+            System.out.println("\n------------------------------------------------------");
         }
     }
 }
